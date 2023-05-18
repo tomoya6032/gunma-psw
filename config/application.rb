@@ -11,6 +11,11 @@ module GunmaPsw
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    if Rails.env.development? || Rails.env.test?
+      Bundler.require(*Rails.groups)
+      Dotenv::Railtie.load
+    end
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -18,5 +23,13 @@ module GunmaPsw
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.i18n.default_locale = :ja
+    config.assets.initialize_on_precompile = false 
+
+    Rails.application.configure do
+      config.generators do |g|
+        g.template_engine :haml
+      end
+    end
   end
 end
