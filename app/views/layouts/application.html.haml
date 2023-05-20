@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title 災害支援掲示板”D-boards”
+    %display_meta_tags(default_meta_tags) 
+    -# %meta{ property: 'og:image', content: image_url('IMG_6345.PNG') }
+    -# %meta "専門職"のための災害支援ツールですチャットで意見交換、記事で情報共有が行えます” 
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    -# = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+   
+
+    %header.header
+      .header_logos
+        .header_pagetitle
+          .pagetitle
+            = link_to '災害支援ボードtop', root_path
+       
+        - if user_signed_in?
+          .dropdown
+            = image_tag current_user.avatar_image, class: 'header_avatar dropbtn'
+            .dropdown-content
+              = link_to 'プロフィール', profile_path
+              -# = link_to 'お気に入り', favorites_path
+              = link_to 'ログアウト', destroy_user_session_path, data: { method: 'delete' }
+        - else
+          = link_to 'ログイン', new_user_session_path, class: 'header_loginBtn'
+    
+    .sitetitle 
+      %h1 災害支援情報共有ボード
+
+    - if flash.present?
+      .flash
+        - flash.each do |key, value|
+          %div{:class => key}= value
+    = yield
+  
+  .footerWrap
+    .footer 
+      %P コピーライト2022

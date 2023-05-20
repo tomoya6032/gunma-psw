@@ -21,8 +21,12 @@ gem "importmap-rails"
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.0'
+
+
+# gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+
+
 gem 'turbolinks', '~> 5'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
@@ -65,6 +69,7 @@ gem 'active_decorator'
 gem 'trix'
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
+gem 'devise'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
@@ -88,6 +93,7 @@ group :development do
   gem "web-console"
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'haml-rails'
   gem 'erb2haml'
 
 
@@ -104,5 +110,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'rails-i18n'
-  gem 'devise'
+  
 end
