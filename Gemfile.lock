@@ -152,6 +152,11 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
+    haml-rails (2.1.0)
+      actionpack (>= 5.1)
+      activesupport (>= 5.1)
+      haml (>= 4.0.6)
+      railties (>= 5.1)
     hamlit (3.0.3)
       temple (>= 0.8.2)
       thor
@@ -223,8 +228,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.2)
-    rack-proxy (0.7.6)
-      rack
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4.2)
@@ -287,7 +290,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    semantic_range (3.0.0)
     sexp_processor (4.17.0)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
@@ -329,11 +331,6 @@ GEM
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
       selenium-webdriver (~> 4.0)
-    webpacker (5.4.4)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     websocket (1.2.9)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
@@ -359,6 +356,7 @@ DEPENDENCIES
   dotenv-rails
   erb2haml
   google-analytics-rails
+  haml-rails
   hamlit
   image_processing (~> 1.2)
   importmap-rails
@@ -387,7 +385,6 @@ DEPENDENCIES
   tzinfo-data
   web-console
   webdrivers
-  webpacker (~> 5.0)
 
 RUBY VERSION
    ruby 3.1.2p20
