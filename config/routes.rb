@@ -14,11 +14,11 @@ Rails.application.routes.draw do
   # resource :history, only: [:show]
 
 
-#  resources :articles do
-#    resources :comments, only: [:index, :new, :show, :edit, :create, :update, :destroy]
-#    resource :like, only: [:show, :create, :destroy]
+ resources :articles do
+   resources :comments, only: [:index, :new, :show, :edit, :create, :update, :destroy]
+   resource :like, only: [:show, :create, :destroy]
 
-#  end
+ end
 
 #  resources :accounts, only: [:show] do
 #    resources :follows, only: [:create]
