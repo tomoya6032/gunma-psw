@@ -1,0 +1,96 @@
+@import 'variables';
+
+$avatar-size: 40px;
+$header-padding-y: 8px;
+$back-icon-size: 16px;
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(46, 163, 246);
+  padding: $header-padding-y 8px;
+  font-weight: bold;
+  a {
+    color: black;
+  }
+
+  &_loginBtn {
+    background-color: $base-bg-color;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align:center;
+    line-height:30px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    color: $primary-color;
+  }
+
+
+  &_logos {
+    min-width: 0;
+    display: flex;
+    width: 100%;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    img {
+      cursor: pointer;
+      width: $back-icon-size;
+      height: $back-icon-size;
+      margin: ($avatar-size - $back-icon-size) / 2 8px 0;
+    }
+  }
+ 
+  &_pagetitle {
+      text-align:center;
+      margin: 10px;
+      padding: 20px;
+      line-height: 20px;
+      border-radius: 8px;
+      background-color: white;
+  }
+
+  &_pagetitle {
+    
+    font-size: 20px;
+   
+  }
+
+  &_avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+}
+
+.sitetitle {
+  width: 100%;
+  text-align:center;
+  color: white;
+}
+
+.dropdown a {
+  color: black;
+  text-align:center;
+  background-color: $base-bg-color;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align:center;
+  line-height:40px;
+  padding: 10px 14px;
+  
+}
+
+.dropdown img {
+  height: 60px;
+  width: 60px;
+}
+
+.dropdown {
+  margin-bottom: 42px;
+}

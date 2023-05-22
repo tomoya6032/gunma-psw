@@ -1,0 +1,338 @@
+// Place all the styles related to the chats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.chats_container {
+
+  h2 {
+    margin-left: 20px;
+  }
+
+}
+
+.wrap {
+  width: 90%;
+  margin: auto;
+}
+
+.new_chat_container {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    margin: 16px 16px 16px 16px;
+    padding: 16px;
+    width: 80%;
+    height: 40px;
+    border-style: dotted;
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4999d;
+    border-radius: 10px;
+}
+
+// .truncate {
+//   font-size: 50px;
+// }
+.trix-content {
+  font-size: 18px;
+}
+
+.chat_follow_button {
+  margin: 5px;
+  margin-left: 20px;
+  background-color: #f4999d;
+  max-width: 120px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 2px solid rgb(244, 95, 95);
+  font-weight: bold;
+  padding: 2px 2px;
+
+  a {
+    color: rgb(246, 246, 246);
+  }
+}
+
+.chat_card {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin: 10px 8px;
+  padding: 10px 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 60px;
+  // font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 0px;
+    
+   }
+  }
+
+.chat_item {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+
+
+.chats {
+  &_card_detail {
+    margin-left: 0;
+    font-size: 50px;
+    
+    img {
+     
+      width: 40px;
+      height: 40px;
+    }
+  } 
+}
+
+.card_detail {
+  display: flex;
+  // align-items: center; /* 縦方向の中央揃え */
+}
+
+.card_detail > div:first-child {
+  width: 45px; /* 片方のdivの幅 */
+  flex: 1; /* 残りの幅を自動で割り当てる */
+}
+
+// .card_detail > div:last-child {
+  // flex: 1; /* 残りの幅を自動で割り当てる */
+// }
+
+// .card_detail .truncate {
+//   overflow: hidden; /* 文字列のオーバーフローを隠す */
+//   white-space: nowrap; /* 文字列の改行を禁止する */
+//   text-overflow: ellipsis; /* 文字列を省略する */
+// }
+
+
+
+.chat_container {
+   display: flex;
+   width: 100%;
+  //  height: 50px;
+   padding:5px;
+   padding-left: 0;
+   margin-left: 0px;
+   justify-content: flex-start;
+   p {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 2px;
+   }
+}
+
+
+
+.card_detail_text {
+  padding-left: 20px;
+}
+
+.chat_content_container {
+  padding-left: 10px;
+  padding-top: 20px;
+  // p {
+  //   white-space: pre-wrap;
+  //   font-size: 50px;
+  // }
+  // padding-bottom: 0px;
+  // position: relative;
+}
+
+
+.chat_card{
+    font-size: 18px;
+}
+
+
+.reply {
+  background-color: white;
+  margin: 16px 16px;
+  padding: 22px 22px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+
+  &_image {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    margin: 22px * -1 22px *-1 16px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+  }
+
+  p {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  &_title {
+    font-size: 18px;
+  }
+
+  &_comment {
+    padding: 12px 0;
+  }
+
+  &_detail {
+    padding-top: 10px;
+    display: flex;
+    font-size: 12px;
+    position: relative;
+
+    img {
+      cursor: pointer;
+      width: 40px;
+      border-radius: 100%;
+      margin-right: 16px;
+    }
+
+    &_actions {
+      right: 0px;
+      position: absolute;
+      top: 0;
+    }
+
+    &_img {
+      size: 50%;
+    }
+  }
+
+  &_heart {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.chat_reply {
+  background-color: rgb(240, 236, 236);
+  border-radius: 10px;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  img {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+  }
+  &_container {
+    width: 210px;
+    line-height: 30px;
+  }
+}
+
+.chat {
+  background-color: white;
+  align-items: center;
+  margin: 14px 14px;
+  padding: 18px 18px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 80%;
+  margin: 30px auto;
+  &_detail {
+    padding: 5px;
+    position: relative;
+    width: 50px;
+    
+  
+    img {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      margin-left: 0px;
+      position: absolute;
+    }
+  
+    &_actions {
+      right: 0px;
+      width: 40px;
+      margin: 0 0 0 auto;
+    }
+
+    &_img {
+      size: 50%;
+    }
+
+  }
+  
+  &_card_content {
+   padding-left: 10px;
+  }
+}
+
+// .reactions {
+//   display: flex;
+//   padding: 10px 0px;
+// }
+
+.chat_heart {
+  margin-right: 0px;
+  // position: fixed;
+  // padding-bottom: 0; 
+  // padding-right: 0px;
+}
+
+.chat_reply_heart {
+ margin-bottom: 0;
+ 
+}
+
+
+.chat_heart_count{
+  color: black;
+  padding-top: 10px;
+  // position: fixed;
+  // align-items: flex-end;
+  margin-right: 10px;
+  // margin-left: auto;
+  padding-bottom: 0;
+}

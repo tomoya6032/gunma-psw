@@ -1,0 +1,190 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import './variables';
+
+// $image_size: 56px;
+
+
+.container_profilePage {
+    // height: 350px;
+    margin: 0 auto;
+    padding-top: 0;
+    width: 90%;
+    
+
+    
+    h1 {
+      background-color: #e7f5d4;
+      
+      padding-left: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      position: relative;
+      border-radius: 10px;
+      height: 60px;
+      line-height:60px;
+      font-size: 25px;
+    }
+}
+
+.profilePage_user {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.profile_item {
+  width: 90%;
+  margin: 0px auto; 
+  margin-top: 30px;
+}
+
+
+
+.wrap_profile_chat {
+  width: 90%;
+  margin: 0px auto; 
+  margin-top: 30px;
+}
+
+
+.profilePage_user_displayName {
+  padding-top: 15px;
+  padding-right: 10px;
+  
+}
+
+.profile_card_detail {
+  padding-top: 12px;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  align-items: center; 
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 8px;
+  }
+  p {
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+}
+
+
+
+.profile_card_detail > div:first-child {
+  width: 45px; /* 片方のdivの幅 */
+  flex: 1; /* 残りの幅を自動で割り当てる */ 
+}
+
+.profilePage {
+  // margin-top: 24px;
+  // height: 600px;
+
+  &_user {
+    display: flex;
+    background-color: rgb(228, 246, 249);
+    height: auto;
+    border-radius: 10px;
+
+    &_image {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      padding-left: 20px;
+      
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+      }
+    }
+
+    &_basicInfo {
+      margin-top: 10px;
+      margin-left: 8px;
+      width: auto;
+    }
+
+    &_actionButton {
+      margin: 10px;
+      margin-right: 10px;
+      background-color: #f4999d;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 2px solid rgb(244, 95, 95);
+      font-weight: bold;
+      padding: 6px 12px;
+      width: 100px;
+
+      a {
+        color: rgb(246, 246, 246);
+        margin: auto;
+
+      }
+    }
+
+    &_name {
+      // display: flex;
+      margin-bottom: 8px;
+    }
+
+    &_displayName {
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 2px;
+    }
+
+    &_introduction {
+      font-size: 16px;
+      width: 90%;
+      min-height: 200px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.profilePage_user_introduction p {
+  // width: 90%;
+}
+
+
+@media screen and (min-width: 600px) {
+  .profile_item {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 20px; 
+    justify-content: center; 
+    padding-left: 30px;
+    // display: inline-block;
+    
+    .card {
+      padding: 8px;
+      margin-right: 50px;
+      width: 300px;
+      // margin: auto;
+    }
+  }
+  .wrap_profile_chat {
+    display: flex;
+    flex-wrap: wrap; 
+    
+    // margin: 20px auto;  
+    .item {
+      padding: 8px;
+      width: 45%;
+    }
+  }
+
+}
+

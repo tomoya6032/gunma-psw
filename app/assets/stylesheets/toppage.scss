@@ -1,0 +1,81 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.top_page  {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.top_container {
+    background-color: #f0d575;
+    margin: 8px 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border-radius: 10px;
+    height: 60px;
+    line-height:60px;
+    margin-bottom: 30px;
+    h2 {
+     width: 100%;
+     padding-left: 20px;
+    }
+}
+
+
+.section_container {
+    background-color: #f5f5f5;
+    // padding-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    h3 {
+      font-size: 30px;
+      padding-left: 40px;
+      padding-top: 10px;
+    }
+    p {
+     padding-left: 30px;
+     padding-bottom: 10px;
+     padding-right: 30px;
+    }
+}
+
+.link_inner {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 20px;
+  }
+//   height: 300px;
+  
+}
+
+.link_text {
+  margin-left: 10px; /* 画像とテキストの間隔 */
+  width: 80%;
+}
+
+.link_image img {
+ width: 100%;
+ float: left;
+ 
+ 
+}
+
+@media screen and (max-width: 850px) {
+    .link_inner {
+      display: flex;
+      flex-direction: column; 
+    }
+
+    .link_image img {
+        width: 100%;
+        float: none;
+      }
+
+}
