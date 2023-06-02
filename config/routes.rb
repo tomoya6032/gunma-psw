@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'timelines/index'
+  get 'timelines/show'
+  get 'timelines/new'
+  get 'timelines/edit'
+  get 'timelines/create'
+  get 'timelines/update'
+  get 'timelines/destroy'
   # devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
