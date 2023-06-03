@@ -55,11 +55,11 @@
 .article 
   %h2 コメント一覧
   .comments-container  
-    -# - @comment.each do |comment|
-    -#   = link_to account_path(comment.user) do
-    -#     .article_comment
-    -#       = image_tag comment.user.avatar_image
-    -#       %p= comment.content
+    - @comment.each do |comment|
+      = link_to account_path(comment.user) do
+        .article_comment
+          = image_tag comment.user.avatar_image
+          %p= comment.content
 
 .comment_container
   .btn-secondary.show-comment-form
@@ -71,4 +71,4 @@
     .btn-secondary.add-comment-button
       コメントを追加
 
--# = javascript_pack_tag 'article' 
+= javascript_pack_tag 'article' 
