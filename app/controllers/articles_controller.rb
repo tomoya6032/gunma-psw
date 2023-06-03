@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
   
   
       def show
-        @comment = @article.comments
+        # @comment = @article.comments
         @user = @article.user 
       end
   
