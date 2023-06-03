@@ -12,8 +12,8 @@ class Article < ApplicationRecord
   # validates :content, uniqueness: true
   # validate :validate_title_and_content_length
 
-  # has_many :comments, dependent: :destroy
-  # has_many :likes, dependent: :destroy
+  has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
   belongs_to :user
 
 
@@ -25,9 +25,9 @@ class Article < ApplicationRecord
     user.display_name
   end
 
-  def like_count
-    likes.count
-  end
+  # def like_count
+  #   likes.count
+  # end
 
   def avatar_image
     if profile&.avatar&.attached?
