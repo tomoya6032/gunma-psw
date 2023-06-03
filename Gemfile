@@ -112,3 +112,7 @@ group :test do
   gem 'rails-i18n'
   
 end
+
+gem "actiontext", "~> 7.0"
+
+gem "webpacker", "~> 5.4"

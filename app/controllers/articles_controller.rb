@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
   
   
       def show
-        @comment = @article.comments
+        # @comment = @article.comments
         @user = @article.user 
       end
   
@@ -26,7 +26,7 @@ class ArticlesController < ApplicationController
         @article = current_user.articles.build(article_params)
         
         if @article.save
-          @article.image.attach(params[:article][:image])
+          @article.images.attach(params[:article][:images])
           redirect_to article_path(@article), notice: '保存ができたよ'
         else
           flash.now[:error] = '保存に失敗しました'
@@ -56,7 +56,7 @@ class ArticlesController < ApplicationController
       def destroy
         article = current_user.articles.find(params[:id])
         article.destroy!
-        redirect_to root_path, notice: '削除に成功しました'
+        redirect_to articles_path(@article), notice: '削除に成功しました'
   
       end
   

@@ -1,0 +1,19 @@
+.item
+  = link_to article_path(article) do
+    .card
+      - if article.eyecatch.attached? 
+        .card_image
+          = image_tag article.eyecatch
+      - else
+        .card_image
+          = image_tag 'default-eyecatch.jpg', size: '150*200'
+      .card_content
+        .card_title
+          -# = article.title
+          = truncate(article.title, length:20) 
+          .card_articl_detail
+            = image_tag article.user.avatar_image
+            %div
+              %p= article.author_name
+              %p= article.display_created_at
+        
