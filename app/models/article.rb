@@ -25,9 +25,9 @@ class Article < ApplicationRecord
     user.display_name
   end
 
-  # def like_count
-  #   likes.count
-  # end
+  def like_count
+    likes.count
+  end
 
   def avatar_image
     if profile&.avatar&.attached?
