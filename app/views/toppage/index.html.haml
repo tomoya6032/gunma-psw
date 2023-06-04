@@ -6,8 +6,8 @@
   .section_container
     = link_to articles_path do
       .link_inner
-        -# .link_image
-        -#   = image_tag 'default-eyecatch.jpg'
+        .link_image
+          = image_tag 'default-eyecatch.jpg'
         .link_text
           %h3 記事
           %p 災害時・平時にできることを記事にまとめています
@@ -15,7 +15,7 @@
        
     
   .section_container
-    -# = link_to chats_path do
+    = link_to chats_path do
       .link_inner
         .link_image
           = image_tag 'default-eyecatch.jpg'
