@@ -9,7 +9,7 @@ $back-icon-size: 16px;
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(46, 163, 246);
+  background-color: rgb(226, 229, 223);
   padding: $header-padding-y 8px;
   font-weight: bold;
   a {
@@ -71,7 +71,7 @@ $back-icon-size: 16px;
 .sitetitle {
   width: 100%;
   text-align:center;
-  color: white;
+  color: rgb(87, 87, 229);
 }
 
 .dropdown a {
