@@ -1,0 +1,56 @@
+.index_container
+  %h2 チャット詳細ページ
+.chat#chat-show{data: {chat_id: @chat.id}}
+  .chat_container
+    .chat_detail
+      = link_to account_path(@chat.user) do
+        = image_tag @chat.user.avatar_image
+    %div
+      %p= @chat.author_name
+      %p= @chat.display_created_at
+    - if user_signed_in? && current_user.has_written3?(@chat)
+      .chat_detail_actions
+        .dropdown
+          = image_tag 'actions.svg', class: 'dropbtn'
+          .dropdown-content.mini
+            = link_to '編集する', edit_chat_path(@chat)
+            = link_to '削除する', chat_path(@chat), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？' }
+    - else  
+      .chat_follow_button
+        - if current_user&.has_followed?(@user)
+          = link_to 'フォロー済み', account_unfollows_path(@user), data: {method: 'post'}
+        - else 
+          = link_to 'フォローする', account_follows_path(@user), data: {method: 'post'}
+  
+  .chat_content_container
+    %p=h @chat.content
+    .chat_reply_heart
+      - if user_signed_in?
+        .chat_heart.hidden.active-heart
+          = image_tag 'heart-active.svg'  
+        .chat_heart.hidden.inactive-heart
+          = image_tag 'heart.svg'
+        .chat_heart_count
+          = @chat.favorite_count
+
+    
+.reply
+  %h2 返信一覧
+  .replies-container
+    - @reply.each do |reply|
+      = link_to account_path(reply.user) do
+        .chat_reply
+          = image_tag reply.user.avatar_image
+          %p= reply.content
+
+.reply_container
+  .btn-secondary.show-reply-form
+    返信を追加
+
+  .reply-text-area.hidden
+    = text_area_tag :reply_content, '', class: 'sm'
+    
+    .btn-secondary.add-reply-button
+      返信を追加
+
+= javascript_pack_tag 'chat' # JavaScriptファイル名がarticle.jsでなく、chat.jsであるため修正しました。
