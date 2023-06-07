@@ -28,7 +28,7 @@
           .card_content
             .card_title
               -# = article.title
-              = truncate(article.title, length:13)
+              = truncate(article.title, length:20)
               .profile_card_detail
                 = image_tag article.user.avatar_image
                 %div

@@ -16,7 +16,7 @@
 
     
     h1 {
-      background-color: #e7f5d4;
+      background-color: rgb(246, 216, 109);
       
       padding-left: 20px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -61,6 +61,7 @@
   display: flex;
   font-size: 14px;
   align-items: center; 
+  background-color: rgb(255, 255, 255);
 
   img {
     width: 40px;
@@ -76,10 +77,10 @@
 
 
 
-.profile_card_detail > div:first-child {
-  width: 45px; /* 片方のdivの幅 */
-  flex: 1; /* 残りの幅を自動で割り当てる */ 
-}
+// .profile_card_detail > div:first-child {
+//   width: 45px; /* 片方のdivの幅 */
+//   flex: 1; /* 残りの幅を自動で割り当てる */ 
+// }
 
 .profilePage {
   // margin-top: 24px;
@@ -87,7 +88,7 @@
 
   &_user {
     display: flex;
-    background-color: rgb(228, 246, 249);
+    background-color: rgb(255, 255, 255);
     height: auto;
     border-radius: 10px;
 
