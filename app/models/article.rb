@@ -8,7 +8,7 @@ class Article < ApplicationRecord
   validates :title, format: { with: /\A(?!\@)/ }
 
   # validates :content, presence: true
-  # validates :content, length: { minimum: 10 }
+  validates :content, length: { minimum: 10 }, presence: true
   # validates :content, uniqueness: true
   # validate :validate_title_and_content_length
 

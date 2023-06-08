@@ -7,8 +7,9 @@
       .profilePage_user_name
         .profilePage_user_displayName
           #{current_user.display_name}
+          
         .profilePage_user_actionButton
-          = link_to '編集', edit_profile_path
+          = link_to ' 編集 ', edit_profile_path
       .profilePage_user_introduction
         = simple_format(current_user.profile&.introduction)
     
