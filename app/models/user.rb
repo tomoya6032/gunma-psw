@@ -51,7 +51,7 @@ class User < ApplicationRecord
   end
 
   def display_name
-    profile&.nickname || self.email.split('@').first
+    profile&.nickname.presence || self.email.split('@').first
   end
 
   def follow!(user)
