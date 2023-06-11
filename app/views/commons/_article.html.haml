@@ -10,7 +10,7 @@
       .card_content
         .card_title
           -# = article.title
-          = truncate(article.title, length:20) 
+          = truncate(article.title, length:12) 
           .card_articl_detail
             = image_tag article.user.avatar_image
             %div
