@@ -25,7 +25,8 @@
   %h2 記事一覧！
 .wrap
   .profile_item
-    - user.articles.each do |article| 
+    - @articles.order(created_at: :desc).each do |article|
+      -# - user.articles.each do |article| 
       = link_to article_path(article) do
         .card
           - if article.eyecatch.attached? 
@@ -38,11 +39,11 @@
             .card_title
               = article.title
               -# = truncate(article.title, length:13) 
-            .profile_card_detail
-              = image_tag article.user.avatar_image
-              %div
-                %p= article.author_name
-                %p= article.display_created_at
+              .profile_card_detail
+                = image_tag article.user.avatar_image
+                %div
+                  %p= article.author_name
+                  %p= article.display_created_at
 
 .index_container
   %h2 チャット一覧
@@ -51,32 +52,36 @@
     = link_to chat_path(chat) do
       .chat_card
         .card_detail
-          %div
-            .profile_card_detail
-              = image_tag chat.user.avatar_image 
-          %div
-            .chat_card_content
-              = truncate(chat.content.to_plain_text, length: 13, class: "truncate")
+          .div
+            = image_tag chat.user.avatar_image 
+          .card_detail_text
+            = truncate(chat.content.to_plain_text, length: 14, class: "truncate")
+            .chat_display
+              %div
+                %p= chat.author_name
+                %p= chat.display_created_at
+          -# = truncate(chat.content, length:25) 
+          -# =h chat.content
 
 .index_container
   %h2 インフォメーション
-.wrap
-  .profile_item
-    - user.informations.each do |information| 
-      = link_to information_path(information) do
-        .card
-          - if information.eyecatch.attached? 
-            .card_image
-              = image_tag information.eyecatch
-          - else
-            .card_image
-              = image_tag 'default-eyecatch.jpg'
-          .card_content
-            .card_title
-              = information.title
+-# .wrap
+-#   .profile_item
+-#     - user.informations.each do |information| 
+-#       = link_to information_path(information) do
+-#         .card
+-#           - if information.eyecatch.attached? 
+-#             .card_image
+-#               = image_tag information.eyecatch
+-#           - else
+-#             .card_image
+-#               = image_tag 'default-eyecatch.jpg'
+-#           .card_content
+-#             .card_title
+-#               = information.title
 
-              .profile_card_detail
-                = image_tag information.user.avatar_image
-                %div
-                  %p= information.author_name
-                  %p= information.display_created_at
+-#               .profile_card_detail
+-#                 = image_tag information.user.avatar_image
+-#                 %div
+-#                   %p= information.author_name
+-#                   %p= information.display_created_at
