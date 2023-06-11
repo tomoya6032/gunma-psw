@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %title 災害支援掲示板”D-boards”
+    %title 群馬MHSW 災害支援共有ボード
     %display_meta_tags(default_meta_tags) 
     %meta{ property: 'og:image', content: image_url('IMG_6345.PNG') }
     -# %meta "専門職"のための災害支援ツールですチャットで意見交換、記事で情報共有が行えます” 
@@ -18,7 +18,7 @@
       .header_logos
         .header_pagetitle
           .pagetitle
-            = link_to '災害支援ボードtop', root_path
+            = link_to '情報共有ボードtop', root_path
        
         - if user_signed_in?
           .dropdown
@@ -31,7 +31,7 @@
           = link_to 'ログイン', new_user_session_path, class: 'header_loginBtn'
     
     .sitetitle 
-      %h1 災害支援情報共有ボード
+      %h1 群馬MHSW<br>災害支援共有ボード
 
     - if flash.present?
       .flash
