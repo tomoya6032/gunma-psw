@@ -12,7 +12,7 @@
           %p + 新しいチャットを作成
 
     .wrap
-      - @chats.each do |chat|
+      - @chats.order(created_at: :desc).each do |chat|
         = render 'commons/chat', chat: chat
   
   
