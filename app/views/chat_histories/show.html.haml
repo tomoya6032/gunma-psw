@@ -1,7 +1,8 @@
-.chats
+.chats 
   .chats_container
     .index_container
       %h2 チャット一覧を表示
+
     .tabs
       = render 'commons/chat_tabs'
 
@@ -9,12 +10,13 @@
       = link_to new_chat_path do
         .chat_new
           %p + 新しいチャットを作成
-    
-    .wrap
-      - @chats.order(created_at: :desc).each do |chat|
-        = render 'commons/chat', chat: chat 
-  
 
-= link_to new_chat_path do
-  .float_btn
-    %i.fa.fa-pencil
+    .wrap
+      - @chats.each do |chat|
+        = render 'commons/chat', chat: chat
+  
+  
+  
+  = link_to new_chat_path do
+    .float_btn
+      %i.fa.fa-pencil
