@@ -12,7 +12,7 @@
           %p + 新しい記事を作成
 
     .wrap
-      - @articles.each do |article|
+      - @articles.order(created_at: :desc).each do |article|
         = render 'commons/article', article: article
   
   
