@@ -1,0 +1,16 @@
+{
+    "name": "gunma-psw app",
+    "description": "This is gunma-psw",
+    "keywords": [],
+    "website": "",
+    "repository": "https://github.com/tomoya6032/gunma-psw.git",
+    "env": {},
+    "addons": [
+      "heroku-postgresql:hobby-dev"
+    ],
+    "buildpacks": [{
+      "url": "heroku/nodejs"
+    }, {
+      "url": "heroku/ruby"
+    }]
+}
