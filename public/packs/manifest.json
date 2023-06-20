@@ -5,7 +5,6 @@
   "article.js.map": "/packs/js/article-4d83f4aac5d81f530ad8.js.map",
   "chat.js": "/packs/js/chat-0e7f303630ef5dfa3443.js",
   "chat.js.map": "/packs/js/chat-0e7f303630ef5dfa3443.js.map",
-
   "entrypoints": {
     "application": {
       "js": [
