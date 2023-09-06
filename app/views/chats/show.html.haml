@@ -15,7 +15,7 @@
           .dropdown-content.mini
             = link_to '編集する', edit_chat_path(@chat)
             = link_to '削除する', chat_path(@chat), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？' }
-    - else  
+    - elsif user_signed_in?  
       .chat_follow_button
         - if current_user&.has_followed?(@user)
           = link_to 'フォロー済み', account_unfollows_path(@user), data: {method: 'post'}
