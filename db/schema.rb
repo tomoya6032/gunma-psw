@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2023_09_07_083301) do
     t.string "filename", null: false
     t.string "content_type"
     t.text "metadata"
-    t.string "service_name", null: false
+    t.string "service_name", default: "amazon", null: false
     t.bigint "byte_size", null: false
     t.string "checksum"
     t.datetime "created_at", precision: 6, null: false
