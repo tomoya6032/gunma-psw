@@ -13,7 +13,7 @@ class User < ApplicationRecord
   has_many :replies, dependent: :destroy
   # has_many :informations, dependent: :destroy
   has_one_attached :avatar, dependent: :destroy
-
+  has_many_attached :images
   has_many :following_relationships, foreign_key: 'follower_id', class_name: 'Relationship', dependent: :destroy
   has_many :followings, through: :following_relationships, source: :following
 
