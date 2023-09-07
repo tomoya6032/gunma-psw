@@ -10,7 +10,7 @@
 .container_profilePage {
     // height: 350px;
     margin: 0 auto;
-    padding-top: 0;
+    padding-top: 30px;
     width: 90%;
     
 
@@ -38,15 +38,24 @@
   width: 90%;
   margin: 0px auto; 
   margin-top: 30px;
+  
 }
 
-
+.wrap_profile_article {
+  width: 90%;
+  margin: 0px auto; 
+  margin-top: 30px;
+  justify-content: flex-start;
+}
 
 .wrap_profile_chat {
   width: 90%;
   margin: 0px auto; 
   margin-top: 30px;
+  justify-content: flex-start;
 }
+
+
 
 
 .profilePage_user_displayName {
@@ -161,12 +170,12 @@
 
 @media screen and (min-width: 600px) {
   .profile_item {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap; 
     margin: 20px; 
-    justify-content: center; 
-    padding-left: 30px;
+    // justify-content: center; 
+    // padding-left: 30px;
     // display: inline-block;
     
     .card {

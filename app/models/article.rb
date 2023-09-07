@@ -1,8 +1,7 @@
 class Article < ApplicationRecord
   has_one_attached :eyecatch
   has_rich_text :content
-  has_many_attached :images
-  # has_one_attached :image
+  
   validates :title, presence: true
   validates :title, length: { minimum: 4, maximum: 100 }
   validates :title, format: { with: /\A(?!\@)/ }
