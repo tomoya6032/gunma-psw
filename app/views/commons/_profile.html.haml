@@ -7,14 +7,15 @@
       .profilePage_user_name
         .profilePage_user_displayName
           #{user.display_name}
-        .profilePage_user_actionButton
-          - if user == current_user
-            = link_to 'Edit', edit_profile_path
-          - else 
-            - if current_user&.has_followed?(user)
-              = link_to 'フォロー済み', account_unfollows_path(user), data: {method: 'post'}
-            - else 
-              = link_to 'フォローする', account_follows_path(user), data: {method: 'post'}
+        - if user_signed_in?  
+          .profilePage_user_actionButton
+            - if user == current_user
+              = link_to 'Edit', edit_profile_path
+            - elsif user_signed_in? 
+              - if current_user&.has_followed?(user)
+                = link_to 'フォロー済み', account_unfollows_path(user), data: {method: 'post'}
+              - else 
+                = link_to 'フォローする', account_follows_path(user), data: {method: 'post'}
       .profilePage_user_introduction
         = user.profile&.introduction
            
@@ -25,7 +26,7 @@
   %h2 記事一覧！
 .wrap
   .profile_item
-    - @articles.order(created_at: :desc).each do |article|
+    - user.articles.order(created_at: :desc).each do |article|
       -# - user.articles.each do |article| 
       = link_to article_path(article) do
         .card

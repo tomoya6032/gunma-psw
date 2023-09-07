@@ -31,7 +31,7 @@ const appendNewComment = (comment) => {
 document.addEventListener('DOMContentLoaded', () => {
   const dataset = document.getElementById('article-show').dataset;
   const articleId = dataset.articleId;
-
+  
   // axios.get(`/articles/${articleId}/comments`)
   //   .then((response) => {
   //     const comments = response.data;

@@ -11,7 +11,8 @@ class Article < ApplicationRecord
   validates :content, length: { minimum: 10 }, presence: true
   # validates :content, uniqueness: true
   # validate :validate_title_and_content_length
-
+  has_many_attached :images, dependent: :destroy
+  
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   belongs_to :user
