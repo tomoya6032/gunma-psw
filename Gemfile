@@ -67,7 +67,7 @@ gem 'aws-sdk-s3', require: false
 gem 'google-analytics-rails'
 gem 'active_decorator'
 gem 'trix'
-
+gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
 gem 'devise'
 
