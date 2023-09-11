@@ -1,0 +1,76 @@
+.chat_reply_container {
+  border-radius: 10px;
+  border: solid;
+  width: 180px;
+  border-color: #b0c2f4;
+  text-align: center;
+  margin: 0 0 0 auto;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reply_container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.reply-text-area {
+  width: 80%;
+  margin: auto;
+}
+
+.chat_reply_heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 0;
+}
+
+.chat_heart {
+  padding-right: 10px;
+}
+
+.chat_heart img {
+  width: 30px;
+  height: 30px;
+}
+
+.reply_edit_container {
+  width: 90%;
+  margin: 20px 8px;
+  padding: 8px 8px;
+  width: 800px;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  resize: vertical;
+  border: 1px solid #EBEBEB;
+}
+
+.reply-text-area {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.btn-secondary {
+  width: 80%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 500px) {
+  .textarea, trix-editor, #reply_content {
+    width: 90%;
+    margin: auto;
+    background-color: #f4f5f2;
+  }
+  .reply_container {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=reply.css.map */

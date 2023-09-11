@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.article_container {
+  width: 90%;
+  margin: auto;
+}
+
+input, select {
+  width: 80%;
+  margin: 10px 2px;
+  padding: 10px 2px;
+}
+
+input.text, select.text {
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+  margin: 20px;
+  padding: 16px;
+  border: 2px solid #EBEBEB;
+  font-size: 16px;
+}
+
+label {
+  font-size: 18px;
+  background-color: #e7f5d4;
+  padding: 5px 20px;
+  margin: 30px 20px;
+  border-radius: 10px;
+}
+
+textarea, trix-editor {
+  width: 90%;
+  margin: 20px 8px;
+  font-size: 18px;
+  padding: 8px 8px;
+  min-height: 300px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  resize: vertical;
+  border: 1px solid #EBEBEB;
+}
+
+.field {
+  height: 70px;
+}
+
+.rich {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.profile_edit_container label {
+  margin-left: 60px;
+}
+
+.profile_edit_container textarea, .profile_edit_container input {
+  min-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* コメント入力エリアのスタイル */
+.comment-text-area {
+  width: 100%;
+  /* ここにテキストエリアのスタイルを追加することができます */
+}
+
+/* コメント追加ボタンのスタイル */
+.btn-secondary.add-comment-button {
+  width: 50%;
+  /* ここにボタンのスタイルを追加することができます */
+}
+
+@media screen and (min-width: 700px) {
+  .profile_edit_container label {
+    margin-left: 80px;
+  }
+  .profile_edit_container textarea, .profile_edit_container input {
+    min-width: 600px;
+    width: 80%;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  textarea, trix-editor, #comment_content.sm {
+    min-width: 180px;
+    width: 80%;
+    margin: auto;
+    background-color: #f4f5f2;
+  }
+  .profile_edit_container label {
+    margin-left: 20px;
+  }
+  .profile_edit_container textarea, .profile_edit_container input {
+    min-width: 300px;
+    width: 80%;
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=form.css.map */
