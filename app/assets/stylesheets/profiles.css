@@ -1,0 +1,185 @@
+.container_profilePage {
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 90%;
+}
+
+.container_profilePage h1 {
+  background-color: #f6d86d;
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border-radius: 10px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
+}
+
+.profilePage_user {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.profile_item {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+.wrap_profile_article {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.wrap_profile_chat {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.profilePage_user_displayName {
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.profile_card_detail {
+  padding-top: 12px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.profile_card_detail img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+.profile_card_detail p {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.profilePage_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profilePage_user_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.profilePage_user_image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.profilePage_user_basicInfo {
+  margin-top: 10px;
+  margin-left: 8px;
+  width: auto;
+}
+
+.profilePage_user_actionButton {
+  margin: 10px;
+  margin-right: 10px;
+  background-color: #f4999d;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 2px solid #f45f5f;
+  font-weight: bold;
+  padding: 6px 12px;
+  width: 100px;
+}
+
+.profilePage_user_actionButton a {
+  color: #f6f6f6;
+  margin: auto;
+}
+
+.profilePage_user_name {
+  margin-bottom: 8px;
+}
+
+.profilePage_user_displayName {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.profilePage_user_introduction {
+  font-size: 16px;
+  width: 90%;
+  min-height: 200px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .profile_item {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px;
+  }
+  .profile_item .card {
+    padding: 8px;
+    margin-right: 50px;
+    width: 300px;
+  }
+  .wrap_profile_chat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrap_profile_chat .item {
+    padding: 8px;
+    width: 45%;
+  }
+}
+/*# sourceMappingURL=profiles.css.map */

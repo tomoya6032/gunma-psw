@@ -1,0 +1,344 @@
+@charset "UTF-8";
+.article {
+  background-color: white;
+  margin: 16px 16px;
+  padding: 22px 22px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border-radius: 10px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.article_image {
+  height: 360px;
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.article_image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+}
+
+.article p {
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
+
+.article h2 {
+  font-size: 16px;
+}
+
+.article_title {
+  font-size: 18px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article_comment {
+  padding: 12px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article_detail {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  position: relative;
+}
+
+.article_detail p {
+  margin-top: 0px;
+}
+
+.article_detail img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.article_detail_actions {
+  right: 0px;
+  position: absolute;
+  top: 0;
+}
+
+.article_detail_img {
+  size: 50%;
+}
+
+.article_content {
+  min-height: 100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article_content p {
+  white-space: pre-wrap;
+}
+
+.article_heart {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+}
+
+.card_articl_detail p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+.card_image {
+  height: 600px;
+  width: 250px;
+  margin: 30px auto;
+}
+
+.article_reactions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article_heart {
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+.article_heart_count {
+  margin-right: 0;
+  margin-left: auto;
+  padding-bottom: 0;
+}
+
+.card_title {
+  word-wrap: normal;
+}
+
+.card {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.card_title {
+  font-size: 22px;
+  margin: 10px 10px;
+  float: left;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 200px;
+}
+
+.card_heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card_heart img {
+  width: 20px;
+  height: 20px;
+}
+
+.card_heart span {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: blue;
+  line-height: 50px;
+}
+
+.card_articl_detail {
+  padding-top: 12px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+}
+
+.card_articl_detail img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+.card_content {
+  padding: 16px 16px;
+}
+
+.article_content {
+  margin-bottom: 50px;
+}
+
+.article_content img {
+  margin-top: 50px;
+  width: 30%;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.article_comment {
+  background-color: #f0ecec;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article_comment p {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.article_comment img {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.article_new {
+  width: 60%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  margin: 30px auto;
+  padding: 16px;
+  height: 40px;
+  border-style: dotted;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.comment_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.article_follow_button {
+  margin: 5px;
+  margin-left: 20px;
+  background-color: #f4999d;
+  max-width: 120px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 2px solid #f45f5f;
+  font-weight: bold;
+  padding: 0px 8px;
+}
+
+.article_follow_button a {
+  color: #f6f6f6;
+}
+
+@media screen and (max-width: 600px) {
+  .article {
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto;
+  }
+  .article_image {
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .article_content img {
+    width: 80%;
+    /* 画面幅いっぱいに広げる */
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    /* ブロック要素として表示 */
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrap .item {
+    padding: 8px;
+    width: 31%;
+  }
+  .article_content img {
+    width: 30%;
+    /* 幅の30%に設定 */
+    margin: 50px 10px 0 0;
+    /* 上に余白、右に余白 */
+    border-radius: 10px;
+    display: inline-block;
+    /* インラインブロック要素として表示 */
+  }
+}
+/*# sourceMappingURL=articles.css.map */
