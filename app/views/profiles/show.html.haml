@@ -40,21 +40,22 @@
 .index_container
   %h2 チャット一覧
 .wrap_profile_chat
-  -# - current_user.chats.each do |chat| 
-  - current_user.chats.order(created_at: :desc).each do |chat|
-    = link_to chat_path(chat) do
-      .chat_card
-        .card_detail
-          .div
-            = image_tag chat.user.avatar_image 
-          .card_detail_text
-            = truncate(chat.content.to_plain_text, length: 16, class: "truncate")
-            .chat_display
-              %div
-                %p= chat.author_name
-                %p= chat.display_created_at
-          -# = truncate(chat.content, length:25) 
-          -# =h chat.content
+  .profile_item
+    -# - current_user.chats.each do |chat| 
+    - current_user.chats.order(created_at: :desc).each do |chat|
+      = link_to chat_path(chat) do
+        .chat_card
+          .card_detail
+            .div
+              = image_tag chat.user.avatar_image 
+            .card_detail_text
+              = truncate(chat.content.to_plain_text, length: 16, class: "truncate")
+              .chat_display
+                %div
+                  %p= chat.author_name
+                  %p= chat.display_created_at
+            -# = truncate(chat.content, length:25) 
+            -# =h chat.content
 
 .index_container
   %h2 インフォメーション

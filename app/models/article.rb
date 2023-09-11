@@ -1,8 +1,7 @@
 class Article < ApplicationRecord
   has_one_attached :eyecatch
   has_rich_text :content
-  has_many_attached :images
-  # has_one_attached :image
+  
   validates :title, presence: true
   validates :title, length: { minimum: 4, maximum: 100 }
   validates :title, format: { with: /\A(?!\@)/ }
@@ -11,7 +10,8 @@ class Article < ApplicationRecord
   validates :content, length: { minimum: 10 }, presence: true
   # validates :content, uniqueness: true
   # validate :validate_title_and_content_length
-
+  has_many_attached :images, dependent: :destroy
+  
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   belongs_to :user
