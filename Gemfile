@@ -67,14 +67,12 @@ gem 'aws-sdk-s3', require: false
 gem 'google-analytics-rails'
 gem 'active_decorator'
 gem 'trix'
-gem 'carrierwave', '~> 2.0'
+
 gem 'mini_magick'
 gem 'devise'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
-
-
 
 gem 'net-imap'
 gem 'net-pop'
