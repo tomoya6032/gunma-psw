@@ -111,6 +111,7 @@ group :test do
   
 end
 
+gem 'actiontext', '6.0.5.1'
 
 
 gem "webpacker", "~> 5.4"
