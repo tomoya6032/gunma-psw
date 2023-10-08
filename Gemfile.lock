@@ -340,6 +340,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  actiontext (= 6.0.5.1)
   active_decorator
   active_model_serializers
   annotate
